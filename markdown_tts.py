@@ -80,7 +80,7 @@ def convert_to_wav(audio_data: bytes, rate: int = SAMPLE_RATE) -> bytes:
 
 def generate() -> None:
     """Main function to handle the TTS generation process."""
-    api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY_3")
     if not api_key:
         print("Error: GEMINI_API_KEY environment variable not set.")
         return
